@@ -13,8 +13,20 @@ app.use(bodyParser.json());
 var port     = process.env.PORT || 8080; // set our port
 
 var mongoose   = require('mongoose');
-mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o'); // connect to our database
+//mongoose.connect('mongodb://node:node@novus.modulusmongo.net:27017/Iganiq8o');
+
+
+mongoose.connect('mongodb://bobo:bobo1@ds035438.mongolab.com:35438/nowadb');
+
+
+//
+//bobo
+//bobo1
+
+ // connect to our database
 var Bear     = require('./app/models/bear');
+
+//mongodb://<user>:<pass>@proximus.modulusmongo.net:27017/rezege9G
 
 // ROUTES FOR OUR API
 // =============================================================================
